@@ -1,0 +1,15 @@
+{
+  "name": "ai-studio-template",
+  "private": true,
+  "version": "0.1.0",
+  "packageManager": "npm@10.8.2",
+  "workspaces": ["apps/*", "packages/*"],
+  "scripts": {
+    "lint": "eslint .",
+    "format": "prettier --check .",
+    "format:write": "prettier --write .",
+    "test": "vitest --run",
+    "build": "npm run -w @app/web build",
+    "dev": "npm run -w @app/web dev"
+  }
+}

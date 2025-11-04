@@ -8,7 +8,7 @@
     "packages/*"
   ],
   "scripts": {
-    "lint": "eslint .",
+    "lint": "npm run -w @app/web lint",
     "format": "prettier --check .",
     "format:write": "prettier --write .",
     "test": "vitest --run",
@@ -28,5 +28,6 @@
     "lint-staged": "15.5.2",
     "prettier": "3.6.2",
     "vitest": "2.1.9"
-  }
+  },
+  "type": "module"
 }

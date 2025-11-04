@@ -2,6 +2,7 @@ import { useState } from 'react';
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
+import { BuildFooter } from './components/BuildFooter';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -28,12 +29,15 @@ function App() {
   );
 }
 
-export default App;
+export { App };
 
 import { AboutBuild } from './components/AboutBuild';
 
-export const __BuildFooter = (
-  <footer style={{ marginTop: 24 }}>
-    <AboutBuild />
-  </footer>
-);
+export default function AppWrapper() {
+  return (
+    <>
+      <App />
+      <BuildFooter />
+    </>
+  );
+}

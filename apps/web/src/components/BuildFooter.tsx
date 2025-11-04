@@ -2,7 +2,7 @@ import { AboutBuild } from './AboutBuild';
 
 export function BuildFooter() {
   return (
-    <footer style={{ marginTop: 24 }}>
+    <footer className="footer">
       <AboutBuild />
     </footer>
   );

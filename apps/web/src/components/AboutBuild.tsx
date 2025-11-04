@@ -2,7 +2,7 @@ import { buildInfo } from '../buildInfo';
 
 export function AboutBuild() {
   return (
-    <div style={{ fontSize: 12, opacity: 0.8 }}>
+    <div>
       <div>
         <strong>Version:</strong> {buildInfo.version}
       </div>

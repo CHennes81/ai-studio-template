@@ -30,9 +30,6 @@ function App() {
 }
 
 export { App };
-
-import { AboutBuild } from './components/AboutBuild';
-
 export default function AppWrapper() {
   return (
     <>

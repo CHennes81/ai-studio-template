@@ -16,5 +16,5 @@ jobs:
           node-version: 20
       - run: npm ci
       - run: npm run lint
-      - run: npx tsc --noEmit
+      - run: npm run -w @app/web typecheck
       - run: npm run -w @app/web build

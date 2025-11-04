@@ -29,3 +29,11 @@ function App() {
 }
 
 export default App;
+
+import { AboutBuild } from './components/AboutBuild';
+
+export const __BuildFooter = (
+  <footer style={{ marginTop: 24 }}>
+    <AboutBuild />
+  </footer>
+);
